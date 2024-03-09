@@ -67,6 +67,8 @@ jobs:
           git checkout main
           echo "Update image tag in deployment.yaml"
           sed -i "s,image:.*image-name:.*,image: afshin28/spring-argocd-k8s:${{ github.sha }}," resource/deployment.yaml
-          git add . 
+          git add .
           git commit -m "Update image tag to ${{ github.sha }}"
+          git status
+          git log -n 1
           git push
