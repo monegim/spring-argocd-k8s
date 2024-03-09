@@ -58,6 +58,7 @@ jobs:
     needs: docker-build-push
     steps:
       - run: |
+          set -x
           echo "promoting into dev environment!"
           git config --global user.email afshin.karimi28@gmail.com && git config --global user.name afshin.karimi28
           echo "cloning config repo k8s-manifest"
