@@ -72,4 +72,4 @@ jobs:
           git commit -m "Update image tag to ${{ github.sha }}"
           git status
           git log -n 1
-          git push
+          git push --force
