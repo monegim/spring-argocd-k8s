@@ -17,7 +17,7 @@ public class SpringArgocdK8sApplication {
 	@Bean
 	ApplicationRunner runner(){
 		return args -> {
-			log.info("Application Version: V2");
+			log.info("Application Version: V3");
 		};
 	}
 
