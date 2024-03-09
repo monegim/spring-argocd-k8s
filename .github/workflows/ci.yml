@@ -65,7 +65,8 @@ jobs:
           cd k8s-manifest
           echo "checkout main branch"
           git checkout main
-          echo "updating image tag in values file"
+          echo "Update image tag in deployment.yaml"
           sed -i "s,image:.*image-name:.*,image: afshin28/spring-argocd-k8s:${{ github.sha }}," resource/deployment.yaml
-          git add . && git commit -m "update image tag"
+          git add . 
+          git commit -m "Update image tag to ${{ github.sha }}"
           git push
