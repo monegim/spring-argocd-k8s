@@ -67,6 +67,7 @@ jobs:
           echo "checkout main branch"
           git checkout main
           echo "Update image tag in deployment.yaml"
+          echo "1234" >> resource/deployment.yaml
           git add .
           git commit -m "Update image tag to ${{ github.sha }}"
           git status
