@@ -62,7 +62,7 @@ jobs:
           echo "promoting into dev environment!"
           git config --global user.email afshin.karimi28@gmail.com && git config --global user.name afshin.karimi28
           echo "cloning config repo k8s-manifest"
-          git clone https://oauth2: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@github.com/AfshinKarimi/k8s-manifest.git
+          git clone https://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@github.com/AfshinKarimi/k8s-manifest.git
           cd k8s-manifest
           echo "checkout main branch"
           git checkout main
